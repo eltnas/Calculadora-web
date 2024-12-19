@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="top-bar">
+            <ul class="social-list">
+                <li class="link" id="social-facebook" onclick="toSocialPage(1)"><span class="icon-social-facebook"></span></li>
+                <li class="link" id="social-linkedin" onclick="toSocialPage(2)"><span class="icon-social-linkedin"></span></li>
+                <li class="link" id="social-insta" onclick="toSocialPage(3)"><span class="icon-social-instagram"></span></li>
+                <li class="link" id="social-user" onclick="toSocialPage(4)"><span class="icon-user"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main-calc">
+            <div class="calc-tela">
+                <div class="tela-nums">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="calc-nums">
+                <div class="nums-btn">
+                    <button class="btn-operacao" onclick="addNum('porc')">%</button>
+                    <button class="btn-operacao" onclick="addNum('raiz')">V</button>
+                    <button class="btn-operacao" onclick="addNum('ce')">CE</button>
+                    <button class="btn-operacao" onclick="addOperacao('CA')">C</button>
+                </div>
+                <div class="nums-btn">
+                    <button class="btn-num" onclick="addNum('7')">7</button>
+                    <button class="btn-num" onclick="addNum('8')">8</button>
+                    <button class="btn-num" onclick="addNum('9')">9</button>
+                    <button class="btn-operacao" onclick="addOperacao('/')">/</button>
+                </div>
+                <div class="nums-btn">
+                    <button class="btn-num" onclick="addNum('4')">4</button>
+                    <button class="btn-num" onclick="addNum('5')">5</button>
+                    <button class="btn-num" onclick="addNum('6')">6</button>
+                    <button class="btn-operacao" onclick="addOperacao('*')">*</button>
+                </div>
+                <div class="nums-btn">
+                    <button class="btn-num" onclick="addNum('1')">1</button>
+                    <button class="btn-num" onclick="addNum('2')">2</button>
+                    <button class="btn-num" onclick="addNum('3')">3</button>
+                    <button class="btn-operacao" onclick="addOperacao('-')">-</button>
+                </div>
+                <div class="nums-btn">
+                    <button class="btn-operacao" onclick="ponto()">.</button>
+                    <button class="btn-num" onclick="addNum('0')">0</button>
+                    <button class="btn-operacao" onclick="calcular()">=</button>
+                    <button class="btn-operacao" onclick="addOperacao('+')">+</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por <a href="https://eltnas.github.io/">Elton C. Nascimento</a></p>
+    </footer>
+    <script src="assets/scripts/redeSocial.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
